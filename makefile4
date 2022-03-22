@@ -1,0 +1,7 @@
+CFLAGS = -Wall -pedantic -std=gnu99 -pthread
+
+2310depot: 2310depot.c
+	gcc $(CFLAGS) 2310depot.c -o 2310depot
+
+g: 2310depot.c
+	gcc $(CFLAGS) 2310depot.c -o 2310depot -g
